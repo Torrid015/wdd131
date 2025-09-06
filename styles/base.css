@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   text-align: center;
   margin: 0;
 }
@@ -35,7 +35,7 @@ nav a {
   color: #b4b4b4;
   font-size: 20px;
   font-weight: 400;
-  transition: ease 0v 3s;
+  transition: ease 0.3s;
 }
 
 nav a:hover {
