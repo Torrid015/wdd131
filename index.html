@@ -3,7 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="This is a WDD 131 - Dynamic Web Fundamentals that displays an optimised history about me 'Osoko Odunayo'. The pages displays my social profiles, favourite scriptures, canvas, a portrait of me, my final project as a student on WDD131 and so on.  "
+    />
+    <meta name="author" content="Osoko Odunayo" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 - Dynamic Web Fundamentals - Osoko Odunayo </title>
   </head>
-  <body> </body>
+  <body>
+    <header>
+      <span id="course-title"
+        >WDD 131 - Dynamic Web Fundamentals - <b>Osoko Odunayo A.</b>
+      </span>
+      <nav>
+        <a href="https://www.linkedin.com/in/osoko-odunayo/">LinkedIn</a>
+        <a href="https://byupw.instructure.com/">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures"
+          >Scripture</a
+        >
+        <a href="#">Final Project</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="first-container">
+        <h1 class="about-heading">About Me</h1>
+        <section class="cards card1">
+          <p
+            >My name is Odunayo, i was born in Ogun state Nigeria. I started out
+            as a fashion designer but later discovered a passion for technology.
+            Now, I'm studying software development through BYU Pathway and
+            building skills in front-end development with HTML, CSS, JavaScript,
+            Tailwind, Bootstrap, and ReactJS. My goal is to combine creativity
+            and technology to build impactful digital solutions.</p
+          >
+          <img src="images/osoko-odunayo.jpg" alt="My Picture" />
+        </section>
+
+        <section class="cards card2">
+          <h1>Ogun State, Nigeria</h1>
+          <div>
+            <figure>
+              <img src="images/Nigeria_Flag.png" alt="Nigeria Flag" />
+              <figcaption>Offical Flag of Nigeria</figcaption>
+            </figure>
+            <p
+              >Ogun State, created in 1976, is located in the southwestern part
+              of Nigeria. It is often called the Gateway State because it shares
+              a border with Lagos, Nigeria's commercial hub, and also connects
+              to the Republic of Benin.</p
+            >
+          </div>
+        </section>
+      </div>
+      <section class="resources">
+        <h1>Web dev resources</h1>
+        <div class="resources-list">
+          <ul>
+            <li><a href="#">Dev.to Community</a></li>
+            <li><a href="#">Smashing Magazine</a></li>
+            <li><a href="#">CSS Tricks</a></li>
+            <li><a href="#">W3 Schools</a></li>
+            <li><a href="#">Udemy</a></li>
+            <li><a href="#">Image Placeholder</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="copyright"
+        >&copy; <span id="currentyear"></span> | Osoko Odunayo Ayomide | Ogun
+        State</p
+      >
+      <p id="lastModifed"></p>
+    </footer>
+  </body>
 </html>
