@@ -89,6 +89,7 @@ footer {
 
 #currentyear {
   font-size: 18px;
+  color: white;
 }
 
 .copyright {
@@ -96,7 +97,7 @@ footer {
 }
 
 #lastModifed {
-  color: #fdcc0c;
+  color: white;
   font-size: 14px;
   margin-top: 0;
 }
