@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Osoko Odunayo" />
+    <meta
+      name="description"
+      content="This is a webpage about Sichuan, China. This province is a home to the majority of the wild panda population and several nature reserves."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+    <title>WDD131 - Sichuan, China</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sichuan</h1>
+    </header>
+
+    <main class="main">
+      <picture class="hero">
+        <source
+          media="(min-width: 1000px)"
+          srcset="images/place-images/large-screen-hero.webp"
+        />
+        <source
+          media="(min-width: 500px)"
+          srcset="images/place-images/medium-screen.webp"
+        />
+        <img src="images/place-images/mobileHero.webp" alt="A Panda" />
+      </picture>
+
+      <section class="data">
+        <h2>Data</h2>
+        <p><span class="title">Area: </span>486,000 sq km</p>
+        <p><span class="title">Population: </span>83,700,000</p>
+        <p><span class="title">Captial: </span>Chengdu</p>
+        <p><span class="title">currency: </span>Chinese Yuan</p>
+        <p><span class="title">Time Zone: </span>GMT+8</p>
+        <p><span class="title">Calling Code: </span>+86</p>
+        <p><span class="title">Internet TLD: </span>.cn</p>
+      </section>
+
+      <section class="weather">
+        <div class="weather-title">
+          <h2>weather </h2>
+          <img src="images/place-images/weather-icon.svg" alt="Weather Icon" />
+        </div>
+
+        <p
+          ><span class="title">Temperature: </span
+          ><span class="temperature"></span> &deg;C</p
+        >
+        <p><span class="title">Conditions: </span>Warm</p>
+        <p><span class="title">Wind: </span><span class="wind"></span> km/h</p>
+        <p><span class="title">Windchill: </span>8&deg;</p>
+      </section>
+    </main>
+
+    <footer>
+      <p class="copyright"
+        >&copy; <span id="currentyear"></span> | Osoko Odunayo Ayomide | Ogun
+        State</p
+      >
+      <p id="lastModifed"></p>
+    </footer>
+  </body>
+</html>
