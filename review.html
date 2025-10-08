@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Submitted</title>
+  </head>
+  <body>
+    <main>
+      <h1>Review successfully submitted!</h1>
+      <p id="total-reviews"></p>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Check if a counter exists, otherwise create one
+        if (!localStorage.getItem("reviewTotal")) {
+          localStorage.setItem("reviewTotal", "0");
+        }
+
+        // Update and store new count
+        let total = Number(localStorage.getItem("reviewTotal"));
+        total += 1;
+        localStorage.setItem("reviewTotal", total);
+
+        // Show result on page
+        const display = document.getElementById("total-reviews");
+        if (display) {
+          display.innerHTML = `You’ve completed <strong>${total}</strong> review(s).<br> You may now close this page.`;
+        }
+      });
+    </script>
+  </body>
+</html>
