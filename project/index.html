@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Osoko Odunayo (Torrid) — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Osoko Odunayo: web developer & fashion designer."
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html" class="logo" aria-label="Go to home"
+          >Torrid — Osoko Odunayo</a
+        >
+      </div>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav"
+        >Menu</button
+      >
+      <nav id="main-nav" class="nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <main>
+        <section class="hero">
+          <div>
+            <h1>Hi — I'm <span class="accent">Odunayo (Torrid)</span></h1>
+            <p class="into"
+              >A fashion designer learning software development. I build
+              responsive websites and design garments with a modern
+              aesthetic.</p
+            >
+            <div class="links">
+              <a class="btn" href="projects.html" role="button"
+                >View projects</a
+              >
+              <a class="btn" href="contact.html" role="button">Contact Me</a>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/osoko odunayo.jpg" alt="My Picture" />
+          </div>
+        </section>
+        <section class="featured" aria-labelledby="featured-title">
+          <h2 id="featured-title">Featured Projects</h2>
+          <div id="featured-list" class="cards" aria-live="polite"></div>
+        </section>
+        <section class="about" aria-labelledby="about-title">
+          <h2 id="about-title">About Me</h2>
+          <p
+            >My name is Odunayo, i was born in Ogun state Nigeria. I started out
+            as a fashion designer but later discovered a passion for technology.
+            Now, I'm studying software development through BYU Pathway and
+            building skills in front-end development with HTML, CSS, JavaScript,
+            Tailwind, Bootstrap, and ReactJS. My goal is to combine creativity
+            and technology to build impactful digital solutions.</p
+          >
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <p
+        >&copy; <span id="year"></span> Osoko Odunayo.
+        <a href="references.html" style="color: #f4f4f4">References</a></p
+      >
+    </footer>
+
+    <script src="scripts/script.js" defer></script>
+  </body>
+</html>

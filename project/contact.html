@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — Osoko Odunayo</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html" class="logo" aria-label="Go to home"
+          >Torrid — Osoko Odunayo</a
+        >
+      </div>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav"
+        >Menu</button
+      >
+      <nav id="main-nav" class="nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <main>
+        <h1>Contact Me</h1>
+        <form id="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            aria-required="true"
+          />
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            aria
+            required="true"
+          />
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            aria
+            required="true"
+          ></textarea>
+          <button type="submit" class="btn">Send message</button>
+          <p id="form-msg" role="status" aria-live="polite"></p>
+        </form>
+        <section aria-labelledby="saved-submissions">
+          <h2 id="saved-submissions">Saved messages (local)</h2>
+          <ul id="submissions-list"></ul>
+        </section>
+      </main>
+    </div>
+    <footer class="site-footer">
+      <p>&copy; <span id="year-3"></span> Osoko Odunayo. </p>
+    </footer>
+    <script src="scripts/script.js" defer></script>
+  </body>
+</html>
